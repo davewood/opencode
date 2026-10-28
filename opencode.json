@@ -1,0 +1,38 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "aqueduct/Qwen3.8-Flash-Next",
+  "providers": {
+    "aqueduct": {
+      "name": "Aqueduct",
+      "package": "@opencode/ai/providers/openai-compatible",
+      "settings": {
+        "baseURL": "https://aqueduct.cc.univie.ac.at/v1",
+        "apiKey": "{env:AQUEDUCT_API_KEY}"
+      },
+      "models": {
+        "Qwen/Qwen3.8-27B": {
+          "name": "Qwen3.8",
+          "capabilities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "Qwen3.8-Flash-Next": {
+          "name": "Qwen3.8-Flash-Next",
+          "capabilities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

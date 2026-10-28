@@ -1,0 +1,12 @@
+services:
+    app:
+        container_name: opencode-app
+        build: .
+        volumes:
+            - type: bind
+              source: ./dev
+              target: /root/dev
+        environment:
+          AQUEDUCT_API_KEY: "sk-APfy1aSkeDxTtK2g2IXdjWe_QcWzYIBgAmYEoWijEig"
+        ports:
+          - "49374:49374"
