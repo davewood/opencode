@@ -15,6 +15,9 @@ ENV PATH=/root/.opencode/bin:$PATH
 RUN mkdir -p /root/.config/opencode
 COPY opencode.json /root/.config/opencode/opencode.json
 
+RUN mkdir /root/.config/opencode/plugins
+COPY qwen-block-proxy-artifacts/plugin/block-proxy-artifacts.ts /root/.config/opencode/plugins/
+
 EXPOSE 49374
 
 COPY entrypoint.sh /root/

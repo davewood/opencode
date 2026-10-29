@@ -1,5 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "plugin": ["block-proxy-artifacts"],
   "model": "aqueduct/Qwen3.8-Flash-Next",
   "providers": {
     "aqueduct": {
