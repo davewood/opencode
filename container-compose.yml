@@ -7,6 +7,6 @@ services:
               source: ./dev
               target: /root/dev
         environment:
-          AQUEDUCT_API_KEY: "sk-APfy1aSkeDxTtK2g2IXdjWe_QcWzYIBgAmYEoWijEig"
+          AQUEDUCT_API_KEY: ${AQUEDUCT_API_KEY}
         ports:
           - "49374:49374"
